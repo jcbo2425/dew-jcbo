@@ -1,8 +1,6 @@
-fetch("employees.json").then(
-    function (request) {
-        return request.json();
-    }
-).then(
+fetch("employees.json")
+.then(request => request.json()) 
+.then(
     function (json){
         let table = document.getElementById("table-container")
         let content = "<table> \
