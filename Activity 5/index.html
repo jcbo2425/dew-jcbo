@@ -4,7 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      div.t {
+        padding-top: 15px
+      }
 
+      table, td, tr{ 
+        border: 1px solid black;
+        padding: 20px;
+      }
+    </style>
     <title>Activity 5: Forms &amp; click event</title>
   </head>
   <body>
@@ -19,5 +28,17 @@
         <li>Add a table with as many rows and columns both Rows and Columns fields indicate</li>
         <li>Each table cell must contain a text like: "Row: X, Col: Y"</li>
       </ol>
+
+      <form>
+        <input id="row" type="text" placeholder="Rows"/>
+        <input id="col" type="text" placeholder="Columns"/>
+        <input type="button" value="Generate table" onclick="createTable()">
+        <input type="button" value="Delete table" onclick="deleteTable()">
+      </form>
+
+      <div class="t" id="div-table">
+
+      </div>
+      <script src="main.js"></script>
   </body>
 </html>
